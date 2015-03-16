@@ -6,7 +6,8 @@
     <script>
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function (position) {
-                alert('Vous êtes situé à la latitude ' + position.coords.latitude + '° et à la longitude ' + position.coords.longitude + '°');
+                document.getElementById('latitude').innerHTML = position.coords.latitude + '°';
+                document.getElementById('longitude').innerHTML = position.coords.longitude + '°';
             }, function () {
                 alert('Vous avez bloqué la geolocalisation');
             });
@@ -14,10 +15,10 @@
         } else {
             alert('Votre navigateur ne prend pas en compte la geolocalisation HTML5');
         }
-        
     </script>
 </head>
 <body>
-
+    <p>Vous êtes situé à la latitude <span id="latitude"></span></p>
+    <p>Vous êtes situé à la longitude <span id="longitude"></span></p>
 </body>
 </html>
