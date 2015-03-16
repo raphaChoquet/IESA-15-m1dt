@@ -6,9 +6,9 @@
     <script>
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function (position) {
-                var geoInfo = "";
-                geoInfo += "Vous êtes situé à la latitude : " + position.coords.latitude + '°<br>';
-                geoInfo += "Vous êtes situé à la longitude : " + position.coords.longitude + '°';
+                var geoInfo = '';
+                geoInfo += 'Vous êtes situé à la latitude : ' + position.coords.latitude + '°<br>';
+                geoInfo += 'Vous êtes situé à la longitude : ' + position.coords.longitude + '°';
                 document.getElementById('position').innerHTML = geoInfo;
             }, function () {
                 alert('Vous avez bloqué la geolocalisation');
