@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <title>Exercice Geoloc</title>
     <script>
+        function myPosition(position) {
+            var geoInfos = "Votre position enregistré : <br>";
+            
+            console.log(position);
+            
+            geoInfos += "Votre latitude : " + position.coords.latitude + "<br>";
+            geoInfos += "Votre longitude : " + position.coords.longitude + "<br>";
+            
+            if (position.coords.speed !== null) {
+                geoInfos += "Votre vitesse de déplacement : " + position.coords.speed;
+            }
+            
+            document.getElementById('position').innerHTML = geoInfos;
+        }
+        
+        function handleError(error) {
+            alert(error.message);
+        }
+        
         if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function (position) {
-                var geoInfo = '';
-                geoInfo += 'Vous êtes situé à la latitude : ' + position.coords.latitude + '°<br>';
-                geoInfo += 'Vous êtes situé à la longitude : ' + position.coords.longitude + '°';
-                document.getElementById('position').innerHTML = geoInfo;
-            }, function () {
-                alert('Vous avez bloqué la geolocalisation');
-            });
-            alert('L\'API de geolocalisation en HTML 5 est disponible');
+            //navigator.geolocation.getCurrentPosition(myPosition, handleError);
+            navigator.geolocation.watchPosition(myPosition, handleError);
         } else {
-            alert('Votre navigateur ne prend pas en compte la geolocalisation HTML5');
+            alert("Votre navigateur ne prend pas en compte la geolocalisation HTML5");
         }
     </script>
 </head>
