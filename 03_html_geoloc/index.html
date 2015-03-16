@@ -5,8 +5,8 @@
     <title>Exercice Geoloc</title>
     <script>
         if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function (res) {
-                alert('Vous êtes situé à la latitude ' + res.coords.latitude + '° et à la longitude ' + res.coords.longitude + '°');
+            navigator.geolocation.getCurrentPosition(function (position) {
+                alert('Vous êtes situé à la latitude ' + position.coords.latitude + '° et à la longitude ' + position.coords.longitude + '°');
             }, function () {
                 alert('Vous avez bloqué la geolocalisation');
             });
@@ -14,6 +14,7 @@
         } else {
             alert('Votre navigateur ne prend pas en compte la geolocalisation HTML5');
         }
+        
     </script>
 </head>
 <body>
