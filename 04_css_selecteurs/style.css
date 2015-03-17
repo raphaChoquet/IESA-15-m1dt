@@ -32,6 +32,8 @@ p {
     margin: 2em;
     border-left: 1px solid #454545;
     padding-left: 2em;
+    line-height: 3em;
+    text-align: center;
 }
 
 
@@ -73,4 +75,12 @@ a {
 
 i {
     font-style: italic;
+}
+
+p:first-child {
+    text-indent: 2em;
+}
+
+h1 {
+    letter-spacing: 0.1em;
 }
