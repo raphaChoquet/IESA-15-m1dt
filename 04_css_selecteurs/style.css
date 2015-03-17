@@ -1,0 +1,46 @@
+/* Id */
+#content {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0 auto;
+    padding: 2em;
+    width: 1200px;
+}
+
+/* Element */
+p {
+    font-family: Verdana;
+    font-size: 1em;
+    color: #454545;
+    line-height: 1.5;
+}
+
+/* Class */
+.thumb {
+    float: right;
+    margin: 2em;
+    border-left: 1px solid #454545;
+    padding-left: 2em;
+}
+
+
+/* Element avec class */
+h1.firstHeading {
+    font-family: Verdana;
+    font-weight: bold;
+    color: #454545;
+}
+
+/* Element descendant */
+div p a {
+    color: blue;
+    font-family: Verdana;
+    font-weight: lighter;
+}
+
+/*Grouping*/
+li, ol, td {
+    color: darkslategray;
+    font-family: Verdana;
+    line-height: 1.5;
+}
