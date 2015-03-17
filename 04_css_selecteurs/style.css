@@ -39,7 +39,9 @@ div p a {
 }
 
 /*Grouping*/
-li, ol, td {
+li,
+ol,
+td {
     color: darkslategray;
     font-family: Verdana;
     line-height: 1.5;
