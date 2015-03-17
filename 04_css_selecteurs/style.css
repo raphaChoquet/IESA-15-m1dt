@@ -29,6 +29,7 @@ p {
 
 /* Class */
 .thumb {
+    position: relative;
     float: right;
     margin: 2em;
     border-left: 1px solid #454545;
@@ -36,6 +37,21 @@ p {
     line-height: 3em;
     text-align: center;
     color: red;
+    font-size: 1em;
+}
+
+.thumb:before {
+    position: absolute;
+    top: 50%;
+    margin-top: -7.5px;
+    left: -15px;
+    content: " ";
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-right: 15px solid #454545;
+    
+    border-bottom: 15px solid transparent;
 }
 
 @-webkit-keyframes swaggymove {
@@ -43,6 +59,7 @@ p {
         letter-spacing: 0;
         transform: rotate(0deg);
         color: red;
+        font-weight: normal;
     }
     5% {
         color: orange;
@@ -61,6 +78,57 @@ p {
     }
     50% {
         letter-spacing: 5em;
+        transform: rotate(180deg);
+        font-weight: bold;
+    }
+    55% {
+        color: cyan;
+    }
+    65% {
+        color: green;
+    }
+    75% {
+        color: yellow;
+        transform: rotate(90deg);
+    }
+    85% {
+        color: orange;
+    }
+    95% {
+        color: red;
+    }
+    100% {
+        letter-spacing: 0;
+        transform: rotate(360deg);
+        font-weight: normal;
+    }
+}
+
+/* Standard syntax */
+@keyframes swaggymove {
+    0% {
+        letter-spacing: 0;
+        transform: rotate(0deg);
+        color: red;
+        font-size: 1em;
+    }
+    5% {
+        color: orange;
+    }
+    15% {
+        color: yellow;
+    }
+    25% {
+        color: green;
+    }
+    35% {
+        color: cyan;
+    }
+    45% {
+        color: purple;
+    }
+    50% {
+        letter-spacing: 2em;
         transform: rotate(180deg);
     }
     55% {
@@ -82,30 +150,13 @@ p {
     100% {
         letter-spacing: 0;
         transform: rotate(360deg);
-    }
-}
-
-/* Standard syntax */
-@keyframes swaggymove {
-    0% {
-        letter-spacing: 0;
-        transform: rotate(0deg);
-    }
-    50% {
-        letter-spacing: 5em;
-        transform: rotate(180deg);
-    }
-    75% {
-        transform: rotate(90deg);
-    }
-    100% {
-        letter-spacing: 0;
-        transform: rotate(360deg);
+        font-size: 1em;
     }
 }
 
 /* Element avec class */
 h1.firstHeading {
+    margin-top: 100px;
     margin-bottom: 50px;
     display: inline-block;
     font-family: 'OpenSans';
@@ -123,7 +174,7 @@ h1.firstHeading {
 
     border-width: 3px;
     border-style: solid; 
-    border-image: linear-gradient(to right, rgba(0,0,0,0) 0%, pink 50%, rgba(0,0,0,0) 100%) 100% 0%;
+    border-image: linear-gradient(to right, rgba(0,0,0,0) 0%, #454545 50%, rgba(0,0,0,0) 100%) 100% 0%;
 }
 
 
