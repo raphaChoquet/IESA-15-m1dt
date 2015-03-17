@@ -7,7 +7,7 @@
 
 ## HTML & XML
 
-* XMl: un seul noeud racine
+* XML: un seul noeud racine
 
 
 
