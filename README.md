@@ -2,12 +2,12 @@
 
 ## Javascript
     
-    *Google Map: mettre des dimensions dans la DIV
+*Google Map: mettre des dimensions dans la DIV
  
 
 ## HTML & XML
 
-    *XMl: un seul noeud racine
+*XMl: un seul noeud racine
 
 
 
