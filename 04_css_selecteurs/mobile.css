@@ -1,0 +1,28 @@
+header, footer {
+	height: 200px;
+	background: #454545;
+}
+
+
+header img {
+	float: right;
+	height: 180px;
+}
+header h1 {
+	margin: 0;
+	color: white;
+}
+
+footer {
+	clear: both;
+}
+
+.sidebar {
+	height: 400px;
+	background-color: red;
+}
+section {
+	height: 400px;
+	background-color: blue;
+}
+
