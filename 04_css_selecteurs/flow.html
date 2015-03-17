@@ -5,10 +5,11 @@
 	<title>Document</title>
 	<style>
 		.red {
-			position: absolute;
+			position: fixed;
 			background: red;
 			left: 100px;
 			top: 50px;
+			z-index: 1;
 		}
 
 		.blue {
@@ -16,14 +17,14 @@
 		}
 
 		.green {
+			position: relative;
 			background: green;
+			z-index: 2;
 		}
 
 		.square {
-
 			width: 200px;
 			height: 200px;
-
 		}
 	</style>
 </head>
