@@ -34,15 +34,98 @@ p {
     padding-left: 2em;
     line-height: 3em;
     text-align: center;
+    color: red;
 }
 
+@-webkit-keyframes swaggymove {
+    0% {
+        letter-spacing: 0;
+        transform: rotate(0deg);
+        color: red;
+    }
+    5% {
+        color: orange;
+    }
+    15% {
+        color: yellow;
+    }
+    25% {
+        color: green;
+    }
+    35% {
+        color: cyan;
+    }
+    45% {
+        color: purple;
+    }
+    50% {
+        letter-spacing: 5em;
+        transform: rotate(180deg);
+    }
+    55% {
+        color: cyan;
+    }
+    65% {
+        color: green;
+    }
+    75% {
+        color: yellow;
+        transform: rotate(90deg);
+    }
+    85% {
+        color: orange;
+    }
+    95% {
+        color: red;
+    }
+    100% {
+        letter-spacing: 0;
+        transform: rotate(360deg);
+    }
+}
+
+/* Standard syntax */
+@keyframes swaggymove {
+    0% {
+        letter-spacing: 0;
+        transform: rotate(0deg);
+    }
+    50% {
+        letter-spacing: 5em;
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(90deg);
+    }
+    100% {
+        letter-spacing: 0;
+        transform: rotate(360deg);
+    }
+}
 
 /* Element avec class */
 h1.firstHeading {
+    margin-bottom: 50px;
+    display: inline-block;
     font-family: 'OpenSans';
     font-weight: bold;
     color: #454545;
+    letter-spacing: 0;
+    -webkit-animation: swaggymove 1.5s infinite; Chrome, Safari, Opera
+    animation: swaggymove 1.5s infinite; 
+    -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+    animation-timing-function: linear;
+
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transform: rotate(0deg);
+
+    border-width: 3px;
+    border-style: solid; 
+    border-image: linear-gradient(to right, rgba(0,0,0,0) 0%, pink 50%, rgba(0,0,0,0) 100%) 100% 0%;
 }
+
+
 
 /* Element descendant */
 div p a {
@@ -67,10 +150,21 @@ h2,
 h3 {
     font-weight: bold;
     text-transform: uppercase;
+    
 }
 
 a {
+    display: inline-block;
     font-variant: small-caps;
+    transition: all 0.3s ease-in-out;
+    transform: scale3d(1,1,1);
+    background: rgba(255, 255, 255, 0.5);
+
+}
+
+a:hover {
+    transform: scale3d(2,2,2);
+    transform-origin: center;
 }
 
 i {
