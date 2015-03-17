@@ -7,6 +7,7 @@
 
 body {
     font-family: 'OpenSans';
+    background: url(image/retina_wood.png) repeat center;
 }
 
 /* Id */
@@ -158,13 +159,18 @@ a {
     font-variant: small-caps;
     transition: all 0.3s ease-in-out;
     transform: scale3d(1,1,1);
-    background: rgba(255, 255, 255, 0.5);
+    background: transparent;
+    padding: 0;
 
 }
 
 a:hover {
+    position: relative;
     transform: scale3d(2,2,2);
     transform-origin: center;
+    background: rgba(255, 255, 255, 1);
+    padding: 0.2em;
+    z-index: 1000;
 }
 
 i {
