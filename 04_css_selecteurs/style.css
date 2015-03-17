@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('font/OpenSans-Regular.eot');
+    src: url('font/OpenSans-Regular.ttf') format('trueType'),
+         url('font/OpenSans-Regular.woff') format('woff');
+}
+
+body {
+    font-family: 'OpenSans';
+}
+
 /* Id */
 #content {
     box-sizing: border-box;
@@ -9,7 +20,7 @@
 
 /* Element */
 p {
-    font-family: Verdana;
+    font-family: 'OpenSans';
     font-size: 1em;
     color: #454545;
     line-height: 1.5;
@@ -26,7 +37,7 @@ p {
 
 /* Element avec class */
 h1.firstHeading {
-    font-family: Verdana;
+    font-family: 'OpenSans';
     font-weight: bold;
     color: #454545;
 }
@@ -34,7 +45,7 @@ h1.firstHeading {
 /* Element descendant */
 div p a {
     color: blue;
-    font-family: Verdana;
+    font-family: 'OpenSans';
     font-weight: lighter;
 }
 
@@ -43,6 +54,6 @@ li,
 ol,
 td {
     color: darkslategray;
-    font-family: Verdana;
+    font-family: 'OpenSans';
     line-height: 1.5;
 }
