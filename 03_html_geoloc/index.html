@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Exercice Geoloc</title>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
     <script>
         function displayPosition(position) {
             var geoInfos = "Votre position enregistré : <br>";
-            
-            console.log(position);
             
             geoInfos += "Votre latitude : " + position.coords.latitude + "<br>";
             geoInfos += "Votre longitude : " + position.coords.longitude + "<br>";
@@ -17,6 +16,17 @@
             }
             
             document.getElementById('position').innerHTML = geoInfos;
+            
+           new google.maps.Map(document.getElementById("map"), {
+                center:  new google.maps.LatLng(position.coords.latitude,  position.coords.longitude),
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+           new google.maps.Marker({
+                position: new google.maps.LatLng(position.coords.latitude,  position.coords.longitude),
+                map: map
+            });
+            
         }
         
         function handleError(error) {
@@ -40,8 +50,8 @@
         }
         
         if (navigator.geolocation) {
-            //navigator.geolocation.getCurrentPosition(myPosition, handleError);
-            navigator.geolocation.watchPosition(displayPosition, handleError);
+            navigator.geolocation.getCurrentPosition(displayPosition, handleError);
+            //navigator.geolocation.watchPosition(displayPosition, handleError);
         } else {
             alert("Votre navigateur ne prend pas en compte la geolocalisation HTML5");
         }
@@ -49,5 +59,6 @@
 </head>
 <body>
     <p id="position">Zone d'information de geolocalisation</p>
+    <div id="map" style="width: 500px; height: 500px;"></div>
 </body>
 </html>
