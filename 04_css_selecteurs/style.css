@@ -110,7 +110,7 @@ p {
         letter-spacing: 0;
         transform: rotate(0deg);
         color: red;
-        font-size: 1em;
+        font-weight: normal;
     }
     5% {
         color: orange;
@@ -128,8 +128,9 @@ p {
         color: purple;
     }
     50% {
-        letter-spacing: 2em;
+        letter-spacing: 5em;
         transform: rotate(180deg);
+        font-weight: bold;
     }
     55% {
         color: cyan;
@@ -150,7 +151,7 @@ p {
     100% {
         letter-spacing: 0;
         transform: rotate(360deg);
-        font-size: 1em;
+        font-weight: normal;
     }
 }
 
@@ -163,7 +164,7 @@ h1.firstHeading {
     font-weight: bold;
     color: #454545;
     letter-spacing: 0;
-    -webkit-animation: swaggymove 1.5s infinite; Chrome, Safari, Opera
+    -webkit-animation: swaggymove 1.5s infinite;
     animation: swaggymove 1.5s infinite; 
     -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
     animation-timing-function: linear;
