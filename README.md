@@ -6,6 +6,7 @@
 * Comportement différent entre a++ et ++a: a++ renvoit le resultat de a non incrément contrairement à ++a;
 * Eviter l'utilisation de "continue" et "break". 
 * Toujours chercher l'écriture la plus simple, la plus courte et aussi la plus compréhensible par tout le monde 
+* Le nom d'une fonction doit commencer par un verbe
 
 ## HTML & XML
 
