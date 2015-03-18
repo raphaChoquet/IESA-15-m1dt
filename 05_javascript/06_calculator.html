@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function add(x, y) {
+/*			for(var i = 0; i < add.arguments.length; ++i) {
+				console.log('arg', arg);
+			}*/
+			
+			return x + y;
+		}
+
+		function minus(x, y) {
+			return x - y; 
+		}
+
+		function divide(x, y) {
+			return x/y;
+		}
+
+		function multiply(x, y) {
+			return x * y;
+		}
+
+		var a = 10;
+		var b = 20;
+		var c = 30;
+		var d = 40;
+		var f = 50;
+		var result;
+
+		result = divide(a, b);
+		result = multiply(result, c);
+		result = minus(result, d);
+		result = add(result, f);
+
+		console.log(result);
+
+		
+		result = minus(add(a, b), multiply(divide(d, f),  c));
+		console.log(result)
+
+	</script>
+</body>
+</html>
