@@ -3,7 +3,9 @@
 ## Javascript
     
 * Google Map: mettre des dimensions dans la DIV
-* Comportement différent entre a++ et ++a: a++ renvoit le resultat de a non incrément contrairement à ++a; 
+* Comportement différent entre a++ et ++a: a++ renvoit le resultat de a non incrément contrairement à ++a;
+* Eviter l'utilisation de "continue" et "break". 
+* Toujours chercher l'écriture la plus simple, la plus courte et aussi la plus compréhensible par tout le monde 
 
 ## HTML & XML
 
