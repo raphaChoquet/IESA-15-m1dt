@@ -7,17 +7,21 @@
 <body>
 	<script>
 		function displayHello() {
-			console.log('Bonjour !');
+			saySomething('Bonjour !');
 		}
 
 		function sayThanks() {
-			console.log('Merci !');
+			saySomething('Merci !');
 		}
 
 
 		function beNice() {
 			displayHello();
-			sayThank();
+			sayThanks();
+		}
+
+		function saySomething(msg) {
+			console.log(msg);
 		}
 
 		beNice();
