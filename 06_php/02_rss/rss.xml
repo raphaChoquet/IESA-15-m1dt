@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?>
+<?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0"> 
+	<channel>
+		<title>Le Journal du Geek</title> 
+		<link>http://www.journaldugeek.com</link> 
+		<description>Journal du Geek - Source d'actualité High-tech : téléphone mobile, tablette, gadgets... tout l'univers Geek !</description> 
+		<lastBuildDate>Thu, 19 Mar 2015 11:36:31 +0000</lastBuildDate> 
+		<language>fr-FR</language> 
+		<sy:updatePeriod>hourly</sy:updatePeriod> 
+		<sy:updateFrequency>1</sy:updateFrequency> 
+		<generator>http://wordpress.org/?v=4.1.1</generator> 
+		<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/LeJournalDuGeek" />
+		<feedburner:info uri="lejournaldugeek" />
+		<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
+		<feedburner:emailServiceId>LeJournalDuGeek</feedburner:emailServiceId>
+		<feedburner:feedburnerHostname>https://feedburner.google.com</feedburner:feedburnerHostname>
+		<feedburner:browserFriendly>This is an XML content feed. It is intended to be viewed in a newsreader or syndicated to another site, subject to copyright and fair use.</feedburner:browserFriendly>
+		<item>
+			<title>Une éclipse solaire demain vers 10h30 !</title>
+			<link>http://feedproxy.google.com/~r/LeJournalDuGeek/~3/m3LxVksYbPU/</link> 
+			<comments>http://www.journaldugeek.com/2015/03/19/eclipse-solaire-20-mars-10h30/#comments</comments> 
+			<pubDate>Thu, 19 Mar 2015 11:36:31 +0000</pubDate> 
+			<dc:creator><![CDATA[Greg]]></dc:creator> 
+			<category><![CDATA[Science]]></category> 
+			<category><![CDATA[eclipse]]></category> 
+			<category><![CDATA[Geek]]></category> 
+			<guid isPermaLink="false"></guid> 
+			<description><![CDATA[]]></description> 
+			<content:encoded><![CDATA[]]></content:encoded> 
+			<wfw:commentRss>http://www.journaldugeek.com/2015/03/19/eclipse-solaire-20-mars-10h30/feed/</wfw:commentRss> 
+			<slash:comments>0</slash:comments> 
+			<feedburner:origLink>http://www.journaldugeek.com/2015/03/19/eclipse-solaire-20-mars-10h30/</feedburner:origLink>
+		</item> 
+		<item>
+			<title>[Départementales] Les personnalités politiques les plus actives sur Twitter</title>
+			<link>http://feedproxy.google.com/~r/LeJournalDuGeek/~3/D-fhncDauq0/</link>
+			<comments>http://www.journaldugeek.com/2015/03/19/departementales-personnalites-politiques-plus-actives-twitter/#comments</comments> 
+			<pubDate>Thu, 19 Mar 2015 11:13:03 +0000</pubDate> 
+			<dc:creator><![CDATA[Elodie]]></dc:creator> 
+			<category><![CDATA[Sur le web]]></category> 
+			<category><![CDATA[Classement]]></category> 
+			<category><![CDATA[Départementales]]></category> 
+			<category><![CDATA[personnalités]]></category> 
+			<category><![CDATA[politique]]></category> 
+			<category><![CDATA[Twitter]]></category> 
+			<guid isPermaLink="false">http://www.journaldugeek.com/?p=266773</guid> 
+			<description><![CDATA[Les départementales approchent et les politiques s’activent. Sur le terrain, mais surtout sur les réseaux sociaux. La communication, c’est la clé. Lire la suite..]]></description> 
+			<content:encoded><![CDATA[<p><strong>Les départementales approchent et les politiques s’activent. Sur le terrain, mais surtout sur les réseaux sociaux. La communication, c’est la clé.</strong></p><p><img
+src="http://www.journaldugeek.com/files/2015/03/départementales_classement_politiques_plus_actifs_twitter-600x389.jpg" alt="départementales_classement_politiques_plus_actifs_twitter" width="600" height="389" class="aligncenter size-medium wp-image-266779" /> <a
+href="http://www.journaldugeek.com/2015/03/19/departementales-personnalites-politiques-plus-actives-twitter/">Lire la suite..</a></p> <img src="//feeds.feedburner.com/~r/LeJournalDuGeek/~4/D-fhncDauq0" height="1" width="1" alt=""/>]]></content:encoded> 
+			<wfw:commentRss>http://www.journaldugeek.com/2015/03/19/departementales-personnalites-politiques-plus-actives-twitter/feed/</wfw:commentRss> 
+			<slash:comments>2</slash:comments> 
+			<feedburner:origLink>http://www.journaldugeek.com/2015/03/19/departementales-personnalites-politiques-plus-actives-twitter/</feedburner:origLink>
+		</item> 
+	</channel> 
+</rss>
