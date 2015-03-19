@@ -1,10 +1,13 @@
 <?php
 
-//define("AIRPLANE", 'D113');
-$array = array();
+$a = 1;
+$b = 2;
 
-var_dump($array);
+function somme($a, $b) 
+{
+	return $a + $b;
+}
 
-$course = array('fruit' => 120, 'orange' => 10);
+$b = somme($a, $b);
 
-var_dump($course);
+echo $b;

@@ -15,6 +15,9 @@
 ## PHP 
 
 * 3 types: types scalaires(Boolean, integer, float, string), composes(array, object) et spéciaux (ressources, NULL)
+* Une fonction, un object ne doit posséder qu'une seule responsabilité.
+
+
  
 
 
