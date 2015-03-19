@@ -5,7 +5,7 @@ $new1 = array(
 	'link'            => 'http://feedproxy.google.com/~r/LeJournalDuGeek/~3/m3LxVksYbPU/',
 	'comments'        => 'http://www.journaldugeek.com/2015/03/19/eclipse-solaire-20-mars-10h30/#comments',
 	'pubDate'         => 'Thu, 19 Mar 2015 11:36:31 +0000',
-	'autor'           => 'Greg',
+	'author'           => 'Greg',
 	'categories'      => 'Science, eclipse, Geek',
 	'description'     => 'C&#8217;est dans le ciel français demain, entre 9 h 45 (8 h 45 GMT) et 11 h 15,
 		    		      que la lune passera devant le soleil et le dissimulera. Cette éclipse...',
@@ -42,7 +42,7 @@ $new2['title'] =  '[Départementales] Les personnalités politiques les plus act
 $new2['link'] =  'http://feedproxy.google.com/~r/LeJournalDuGeek/~3/D-fhncDauq0/';
 $new2['comments'] =  'http://www.journaldugeek.com/2015/03/19/departementales-personnalites-politiques-plus-actives-twitter/#comments';
 $new2['pubDate'] =  'Thu, 19 Mar 2015 11:13:03 +0000';
-$new2['autor'] =  'Elodie';
+$new2['author'] =  'Elodie';
 $new2['categories'] =  'Sur le web, Classement, Départementales, personnalités, politique, Twitter';
 $new2['description'] =  'Les départementales approchent et les politiques s’activent. Sur le terrain, 
 						 mais surtout sur les réseaux sociaux. La communication, c’est la clé. Lire la suite..';
@@ -68,26 +68,28 @@ $new2['enclosureType'] = 'image/jpeg';
 $news = array($new1, $new2);
 
 
-function displayRow($array) 
+function buildHtmlRowFor($news) 
 {
-	echo '<tr>';
-	foreach ($array as $value) {
-		echo '<td>' . $value . '</td>';
+	$html = '<tr>';
+	foreach ($news as $property) {
+		$html .= '<td>' . $property . '</td>';
 	}
-	echo '</tr>';
+	$html .= '</tr>';
+
+	return $html;
 }
 
 
-function displayTable($multiArray)
+function buildHtmlTableFor($multiNews)
 {
-	echo '<table>';
-	foreach ($multiArray as $array) {
-		displayRow($array);
+	$html = '<table>';
+	foreach ($multiNews as $news) {
+		$html .= buildHtmlRowFor($news);
 	}
-	echo '</table>';
+	$html .= '</table>';
+
+	return $html;
 }
-
-
 
 
 ?>
@@ -98,6 +100,6 @@ function displayTable($multiArray)
 	<title>Document</title>
 </head>
 <body>
-	<?php echo displayTable($news); ?>
+	<?php echo buildHtmlTableFor($news); ?>
 </body>
 </html>
