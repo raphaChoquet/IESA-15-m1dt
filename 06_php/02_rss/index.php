@@ -64,15 +64,14 @@ $new2['enclosureUrl'] = 'http://medias.lequipe.fr/img-photo-jpg/halilhodzic-vahi
 $new2['enclosureLength'] = '50000000';
 $new2['enclosureType'] = 'image/jpeg';
 
+$wantedProperties = array('title', 'description', 'pubDate');
 
-$news = array($new1, $new2);
-
-
-function buildHtmlRowFor($news) 
+function  buildHtmlRowFor($news, $wantedProperties) 
 {
+
 	$html = '<tr>';
-	foreach ($news as $property) {
-		$html .= '<td>' . $property . '</td>';
+	foreach ($wantedProperties as $property) {
+		$html .= '<td>' . $news[$property] . '</td>';
 	}
 	$html .= '</tr>';
 
@@ -80,17 +79,18 @@ function buildHtmlRowFor($news)
 }
 
 
-function buildHtmlTableFor($multiNews)
+function buildHtmlTableFor($multiNews, $wantedProperties)
 {
 	$html = '<table>';
 	foreach ($multiNews as $news) {
-		$html .= buildHtmlRowFor($news);
+		$html .= buildHtmlRowFor($news, $wantedProperties);
 	}
 	$html .= '</table>';
 
 	return $html;
 }
 
+$news = array($new1, $new2);
 
 ?>
 <!DOCTYPE html>
@@ -100,6 +100,6 @@ function buildHtmlTableFor($multiNews)
 	<title>Document</title>
 </head>
 <body>
-	<?php echo buildHtmlTableFor($news); ?>
+	<?php echo buildHtmlTableFor($news, $wantedProperties); ?>
 </body>
 </html>
