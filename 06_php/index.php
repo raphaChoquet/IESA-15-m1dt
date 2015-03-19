@@ -1,3 +1,6 @@
 <?php
-	echo 'J\'ai oublié  la balise fermante PHP !';
-	echo 'Que se passe-t-il ?';
+
+//define("AIRPLANE", 'D113');
+const AIRPLANE = 'D112';
+
+echo AIRPLANE;

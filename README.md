@@ -12,9 +12,10 @@
 
 * XML: un seul noeud racine
 
+## PHP 
 
-
-
+* 3 types: types scalaires(Boolean, integer, float, string), composes(array, object) et spéciaux (ressources, NULL)
+ 
 
 
 
