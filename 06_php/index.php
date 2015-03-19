@@ -1,6 +1,10 @@
 <?php
 
 //define("AIRPLANE", 'D113');
-const AIRPLANE = 'D112';
+$array = array();
 
-echo AIRPLANE;
+var_dump($array);
+
+$course = array('fruit' => 120, 'orange' => 10);
+
+var_dump($course);
