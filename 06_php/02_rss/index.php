@@ -103,3 +103,4 @@ $news = array($new1, $new2);
 	<?php echo buildHtmlTableFor($news, $wantedProperties); ?>
 </body>
 </html>
+
