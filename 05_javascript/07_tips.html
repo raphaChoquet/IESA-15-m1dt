@@ -7,12 +7,10 @@
 <body>
 <script type="text/javascript">
 	
-	var s1 = 'Hello';
-	var s2 = "hEllo";
+	var november = new Date(2010, 10, 3);
 
-	if (s1.ignoreCase == s2.ignoreCase) {
-		console.log('Ca roule !');
-	}
+	november.setMonth(november.getMonth() + 14);
+	console.log(november);
 
 </script>	
 </body>
