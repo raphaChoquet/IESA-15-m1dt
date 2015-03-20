@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
 <?php
+
+$url = 'index.php';
+
 if (isset($_POST['firstname']) && isset($_POST['lastname'])) {
-	echo htmlspecialchars($_POST['firstname']) . ' ' . htmlspecialchars($_POST['lastname']);
+	$url .= '?firstname=' . htmlspecialchars($_POST['firstname']) . '&lastname=' . htmlspecialchars($_POST['lastname']);
 }
-?>
-</body>
-</html>
-<?php
+
+header('location: ' . $url);
 
 
