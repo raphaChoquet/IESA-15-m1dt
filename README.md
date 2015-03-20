@@ -18,9 +18,6 @@
 
 * __Une fonction, un object ne doit posséder qu'une seule responsabilité.__
 
-
- 
-
 ## News
 
 http://www.blog-nouvelles-technologies.fr/62062/microsoft-google-angular-js-2/
