@@ -21,6 +21,9 @@
 
  
 
+## News
+
+http://www.blog-nouvelles-technologies.fr/62062/microsoft-google-angular-js-2/
 
 
 
