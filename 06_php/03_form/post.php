@@ -2,10 +2,8 @@
 
 $url = 'index.php';
 
-if (isset($_POST['firstname']) && isset($_POST['lastname'])) {
+if (!empty($_POST['firstname']) && !empty($_POST['lastname'])) {
 	$url .= '?firstname=' . htmlspecialchars($_POST['firstname']) . '&lastname=' . htmlspecialchars($_POST['lastname']);
 }
 
 header('location: ' . $url);
-
-

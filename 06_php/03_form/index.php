@@ -14,9 +14,9 @@
 		<input type="submit" value="Envoyer">
 	</form>
 	<?php
-	if (isset($_GET['firstname']) && isset($_GET['lastname'])) {
-		echo '<p>' . htmlspecialchars($_GET['firstname']) . ' ' . htmlspecialchars($_GET['lastname']) . '</p>';
-	}
+		if (isset($_GET['firstname']) && isset($_GET['lastname'])) {
+			echo '<p>' . htmlspecialchars($_GET['firstname']) . ' ' . htmlspecialchars($_GET['lastname']) . '</p>';
+		}
 	?>
 </body>
 </html>
