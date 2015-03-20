@@ -1,0 +1,45 @@
+function operate(callback, x , y) {
+	var args = operate.arguments;
+	var accumulator = operate.arguments[1];
+	for (var i = 2; i < operate.arguments.length; ++i) {
+		accumulator = callback(accumulator, operate.arguments[i]);
+	}
+
+	return accumulator;
+}
+
+function add(x, y) {
+	return x + y;
+}
+
+function minus(x, y) {
+	return x - y;
+}
+
+function divide(x, y) {
+	return x / y;
+}
+
+function multiply(x, y) {
+	return x * y;
+}
+
+var a = 10;
+var b = 20;
+var c = 30;
+var d = 40;
+var f = 50;
+var result;
+
+result = divide(a, b);
+result = multiply(result, c);
+result = minus(result, d);
+result = add(result, f);
+
+console.log(result);
+
+
+result = minus(add(a, b), multiply(divide(d, f),  c));
+console.log(result);
+
+console.log(operate(add, a, b, c, d));

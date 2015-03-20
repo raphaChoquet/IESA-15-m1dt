@@ -5,17 +5,14 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="qunit-1.17.1.css" >
 	<script src="qunit-1.17.1.js"></script>
+	<script src="calculator.js"></script>
 </head>
 <body>
 	<div id="qunit"></div>
 	<div id="qunit-fixture"></div>
 	<script>
-		QUnit.test("A test", function (assert) {
-			assert.equal(1, 1, "1 expected");
-		});
-
-		QUnit.test("B test", function (assert) {
-			assert.equal(1, 2, "1 expected");
+		QUnit.test('That addition succeeded', function(assert) {
+			assert.equal(add(2, 1), 3, "3 expected");
 		});
 	</script>
 </body>
